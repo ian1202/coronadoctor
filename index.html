@@ -48,12 +48,16 @@ input[type=submit]:hover {
     <label for="qrcode">Patient Unique QR Code</label>
     <input type="text" id="qrcode" name="firstname" value="ASFHAHKAFSJLK89783254AIUHALJSFIHUGA">
 
-    <label for="sex">Patient's Gender</label>
+    <label for="sex">Gender</label>
     <select id="sex" name="sex">
+        <option value="male">Patient's Gender</option>
       <option value="male">Male</option>
       <option value="female">Female</option>
       <option value="other">Other</option>
     </select>
+
+    <label for="age">Age</label>
+    <input type="text" id="age" name="age" placeholder="Patient's age ">
 
     <label for="lname">Doctor's Full Name</label>
     <input type="text" id="fname" name="lastname" placeholder="Dr. ">
@@ -81,7 +85,9 @@ input[type=submit]:hover {
     <br>
     <br>
 
-    <span><a href="href="message.html"> <button class="btn btn-danger navbar-btn">Submit</button></a></span>
+    <ul style:"list-style-type: none;">
+    <li><a href="message.html">Submit</a></li>
+    </ul>
   </form>
 </div>
 
