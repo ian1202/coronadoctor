@@ -1,1 +1,88 @@
-coronadoctor
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>CoroNo - Doctor Interface </h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="qrcode">Patient Unique QR Code</label>
+    <input type="text" id="qrcode" name="firstname" value="ASFHAHKAFSJLK89783254AIUHALJSFIHUGA">
+
+    <label for="sex">Patient's Gender</label>
+    <select id="sex" name="sex">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="lname">Doctor's Full Name</label>
+    <input type="text" id="fname" name="lastname" placeholder="Dr. ">
+
+    <label for="lname">Hospital/ Clinic's Name</label>
+    <input type="text" id="clinic" name="clinic" >
+    
+
+    <label for="subject">Clinic's Address</label>
+    <textarea id="subject" name="subject" placeholder="Please enter full address " style="height:100px"></textarea>
+
+    <label for="country">State</label>
+    <select id="country" name="country">
+      <option value="australia">New York</option>
+      <option value="canada">Brooklyn</option>
+      <option value="usa">New Jersey</option>
+    </select>
+
+    <div>
+    <br>
+    <label>
+        <input type="checkbox" checked="checked" name="sameadr"> I can confirm this patient has been tested positive for COVID-19
+    </label>
+    </div>
+    <br>
+    <br>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
+
